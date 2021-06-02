@@ -193,7 +193,7 @@ void TebConfig::reconfigure(TebLocalPlannerReconfigureConfig& cfg)
   trajectory.force_reinit_new_goal_dist = cfg.force_reinit_new_goal_dist;
   trajectory.force_reinit_new_goal_angular = cfg.force_reinit_new_goal_angular;
   trajectory.feasibility_check_no_poses = cfg.feasibility_check_no_poses;
-  trajectory.feasibility_check_lookahead_distance = cfg.feasibility_check_lookahead_distance;
+//  trajectory.feasibility_check_lookahead_distance = cfg.feasibility_check_lookahead_distance;
   trajectory.publish_feedback = cfg.publish_feedback;
   
   // Robot     
@@ -207,7 +207,7 @@ void TebConfig::reconfigure(TebLocalPlannerReconfigureConfig& cfg)
   robot.min_turning_radius = cfg.min_turning_radius;
   robot.wheelbase = cfg.wheelbase;
   robot.cmd_angle_instead_rotvel = cfg.cmd_angle_instead_rotvel;
-  robot.use_proportional_saturation = cfg.use_proportional_saturation;
+//  robot.use_proportional_saturation = cfg.use_proportional_saturation;
   
   // GoalTolerance
   goal_tolerance.xy_goal_tolerance = cfg.xy_goal_tolerance;
@@ -225,9 +225,9 @@ void TebConfig::reconfigure(TebLocalPlannerReconfigureConfig& cfg)
   obstacles.obstacle_association_cutoff_factor = cfg.obstacle_association_cutoff_factor;
   obstacles.costmap_obstacles_behind_robot_dist = cfg.costmap_obstacles_behind_robot_dist;
   obstacles.obstacle_poses_affected = cfg.obstacle_poses_affected;
-  obstacles.obstacle_proximity_ratio_max_vel = cfg.obstacle_proximity_ratio_max_vel;
-  obstacles.obstacle_proximity_lower_bound = cfg.obstacle_proximity_lower_bound;
-  obstacles.obstacle_proximity_upper_bound = cfg.obstacle_proximity_upper_bound;
+//  obstacles.obstacle_proximity_ratio_max_vel = cfg.obstacle_proximity_ratio_max_vel;
+//  obstacles.obstacle_proximity_lower_bound = cfg.obstacle_proximity_lower_bound;
+//  obstacles.obstacle_proximity_upper_bound = cfg.obstacle_proximity_upper_bound;
   
   // Optimization
   optim.no_inner_iterations = cfg.no_inner_iterations;
@@ -250,7 +250,7 @@ void TebConfig::reconfigure(TebLocalPlannerReconfigureConfig& cfg)
   optim.weight_inflation = cfg.weight_inflation;
   optim.weight_dynamic_obstacle = cfg.weight_dynamic_obstacle;
   optim.weight_dynamic_obstacle_inflation = cfg.weight_dynamic_obstacle_inflation;
-  optim.weight_velocity_obstacle_ratio = cfg.weight_velocity_obstacle_ratio;
+//  optim.weight_velocity_obstacle_ratio = cfg.weight_velocity_obstacle_ratio;
   optim.weight_viapoint = cfg.weight_viapoint;
   optim.weight_adapt_factor = cfg.weight_adapt_factor;
   optim.obstacle_cost_exponent = cfg.obstacle_cost_exponent;
@@ -258,13 +258,13 @@ void TebConfig::reconfigure(TebLocalPlannerReconfigureConfig& cfg)
   // Homotopy Class Planner
   hcp.enable_multithreading = cfg.enable_multithreading;
   hcp.max_number_classes = cfg.max_number_classes; 
-  hcp.max_number_plans_in_current_class = cfg.max_number_plans_in_current_class;
+//  hcp.max_number_plans_in_current_class = cfg.max_number_plans_in_current_class;
   hcp.selection_cost_hysteresis = cfg.selection_cost_hysteresis;
   hcp.selection_prefer_initial_plan = cfg.selection_prefer_initial_plan;
   hcp.selection_obst_cost_scale = cfg.selection_obst_cost_scale;
   hcp.selection_viapoint_cost_scale = cfg.selection_viapoint_cost_scale;
   hcp.selection_alternative_time_cost = cfg.selection_alternative_time_cost;
-  hcp.selection_dropping_probability = cfg.selection_dropping_probability;
+//  hcp.selection_dropping_probability = cfg.selection_dropping_probability;
   hcp.switching_blocking_period = cfg.switching_blocking_period;
   
   hcp.obstacle_heading_threshold = cfg.obstacle_heading_threshold;
