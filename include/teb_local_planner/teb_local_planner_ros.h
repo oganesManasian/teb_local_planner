@@ -90,19 +90,19 @@ namespace teb_local_planner
   * interfaces, so the teb_local_planner plugin can be used both in move_base and move_base_flex (MBF).
   * @todo Escape behavior, more efficient obstacle handling
   */
-class TebLocalPlannerROS : public nav_core::BaseLocalPlanner, public mbf_costmap_core::CostmapController
+class TebLocalPlannerSocialROS : public nav_core::BaseLocalPlanner, public mbf_costmap_core::CostmapController
 {
 
 public:
   /**
     * @brief Default constructor of the teb plugin
     */
-  TebLocalPlannerROS();
+  TebLocalPlannerSocialROS();
 
   /**
     * @brief  Destructor of the plugin
     */
-  ~TebLocalPlannerROS();
+  ~TebLocalPlannerSocialROS();
 
   /**
     * @brief Initializes the teb plugin
